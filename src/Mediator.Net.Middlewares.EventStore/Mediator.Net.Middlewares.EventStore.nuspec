@@ -9,7 +9,7 @@
     <licenseUrl>https://github.com/mayuanyang/Mediator.Net</licenseUrl>
     <projectUrl>https://github.com/mayuanyang/Mediator.Net/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Middleware that plug into Mediator.Net's publish pipeline to send event to EventStore, usually use for event sourcing</description>
+    <description>A Mediator.Net's middleware that plugs into the publish pipeline to send event to EventStore, it is usually being used for event sourcing.</description>
     <tags>.NET Mediator Cqrs DDD Command Event Request Response EventSourcing EventStore GetEventStore</tags>
     <dependencies>
       <group targetFramework=".NETFramework4.5" />
