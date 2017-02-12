@@ -14,7 +14,8 @@ var bus = builder.RegisterHandlers(typeof(Program).Assembly)
             x.UseEventStore(new EventStoreService());
         }).Build();
    
-   // Send the command, any event that being raised by the behavior triggered by this command will then be sent to EventStore
+   // Send the command, any event that being raised by the behavior triggered by 
+   // this command will then be sent to EventStore
    await bus.SendAsync(new SimpleCommand());
                 
 ```
