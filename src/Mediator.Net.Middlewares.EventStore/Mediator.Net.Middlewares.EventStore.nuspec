@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Mediator.Net.Middlewares.EventStore</id>
+    <title>EventStore middleware for Mediator.Net</title>
+    <version>1</version>
+    <authors>Yuan(Eddy) Ma</authors>
+    <owners>Yuan(Eddy) Ma</owners>
+    <licenseUrl>https://github.com/mayuanyang/Mediator.Net</licenseUrl>
+    <projectUrl>https://github.com/mayuanyang/Mediator.Net/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Middleware that plug into Mediator.Net's publish pipeline to send event to EventStore, usually use for event sourcing</description>
+    <tags>.NET Mediator Cqrs DDD Command Event Request Response EventSourcing EventStore GetEventStore</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5" />
+    </dependencies>
+  </metadata>
+</package>
