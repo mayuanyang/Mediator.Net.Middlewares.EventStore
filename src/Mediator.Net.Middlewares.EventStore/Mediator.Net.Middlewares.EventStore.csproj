@@ -35,7 +35,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Mediator.Net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Mediator.Net.1.0.56\lib\net45\Mediator.Net.dll</HintPath>
+      <HintPath>..\..\packages\Mediator.Net.1.0.59\lib\net45\Mediator.Net.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
