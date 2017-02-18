@@ -3,7 +3,7 @@
   <metadata>
     <id>Mediator.Net.Middlewares.EventStore</id>
     <title>EventStore middleware for Mediator.Net</title>
-    <version>$version$</version>
+    <version>1.0.1</version>
     <authors>Yuan(Eddy) Ma</authors>
     <owners>Yuan(Eddy) Ma</owners>
     <licenseUrl>https://github.com/mayuanyang/Mediator.Net</licenseUrl>
