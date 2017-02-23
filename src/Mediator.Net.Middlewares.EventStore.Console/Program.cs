@@ -11,7 +11,7 @@ namespace Mediator.Net.Middlewares.EventStore.Console
             var bus = builder.RegisterHandlers(typeof(Program).Assembly)
                 .ConfigurePublishPipe(x =>
                 {
-                    x.UseEventStore(new EventStoreService());
+                    x.UseEventStore(new EventStoreService(), () => true);
                 }).Build();
 
             RunAsync(bus).Wait();

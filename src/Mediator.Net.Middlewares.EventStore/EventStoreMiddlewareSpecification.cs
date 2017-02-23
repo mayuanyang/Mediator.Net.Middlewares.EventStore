@@ -9,14 +9,16 @@ namespace Mediator.Net.Middlewares.EventStore
     public class EventStoreMiddlewareSpecification : IPipeSpecification<IPublishContext<IEvent>>
     {
         private readonly IEventStoreService _eventStoreService;
+        private readonly Func<bool> _shouldExecute;
 
-        public EventStoreMiddlewareSpecification(IEventStoreService eventStoreService)
+        public EventStoreMiddlewareSpecification(IEventStoreService eventStoreService, Func<bool> shouldExecute )
         {
             _eventStoreService = eventStoreService;
+            _shouldExecute = shouldExecute;
         }
         public bool ShouldExecute(IPublishContext<IEvent> context)
         {
-            return true;
+            return _shouldExecute();
         }
 
         public async Task ExecuteBeforeConnect(IPublishContext<IEvent> context)
