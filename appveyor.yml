@@ -1,0 +1,12 @@
+version: 0.9.{build}
+configuration: Release
+before_build:
+- cmd: nuget restore Mediator.Net.Middlewares.EventStore.sln
+build:
+  project: Mediator.Net.Middlewares.EventStore.sln
+  verbosity: minimal
+after_build:
+- cmd: nuget pack src/Mediator.Net.Middlewares.EventStore/Mediator.Net.Middlewares.EventStore.csproj -Version %APPVEYOR_BUILD_VERSION%
+test: off
+artifacts:
+- path: '**\Mediator.Net.Middlewares.EventStore*.nupkg'
