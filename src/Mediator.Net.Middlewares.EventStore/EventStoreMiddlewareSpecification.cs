@@ -33,5 +33,10 @@ namespace Mediator.Net.Middlewares.EventStore
         {
             return Task.FromResult(0);
         }
+
+        public void OnException(Exception ex, IPublishContext<IEvent> context)
+        {
+            throw ex;
+        }
     }
 }
